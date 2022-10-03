@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
+
+/*  */
+* {
+  font-family: "Besley", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: 0.2s all linear;
+  line-height: 1.5;
+}
+*::selection {
+  background: var(--main);
+  color: #000;
+}
+:root {
+  --main: #ff0c25;
+}
+body {
+  background: #000;
+}
+html {
+  font-size: 62.5%;
+}
+section {
+  padding: 1rem 5%;
+  min-height: 100vh;
+}
+.boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.box {
+  flex: 1 1 30rem;
+  height: 25rem;
+  position: relative;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+  background: #fff;
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.6rem;
+  object-fit: cover;
+  z-index: 10;
+}
+.box:hover img {
+  height: 80%;
+  width: 80%;
+  cursor: pointer;
+}
+.icons {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.icons i {
+  display: block;
+  height: 5rem;
+  width: 5rem;
+  font-size: 1.7rem;
+  line-height: 5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.6rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+i:hover {
+  background: var(--main);
+  color: #fff;
+  cursor: pointer;
+}
+h3 {
+  position: absolute;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  bottom: 0.5rem;
+  left: 1rem;
+}
